@@ -2,14 +2,14 @@ import os
 import connexion
 from flask_injector import FlaskInjector
 from connexion.resolver import RestyResolver
-from CouchProvider import CouchProvider
+from providers.CouchProvider import CouchProvider
 
 from injector import Binder
 
-def configure(binder: Binder) -> Binder:
-    binder.bind(
-        CouchProvider
-    )
+#def configure(binder: Binder) -> Binder:
+ #   binder.bind(
+  #      CouchProvider
+   # )
 
 
 if __name__ == '__main__':
