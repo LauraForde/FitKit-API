@@ -6,10 +6,10 @@ from providers.CouchProvider import CouchProvider
 
 from injector import Binder
 
-#def configure(binder: Binder) -> Binder:
- #   binder.bind(
-  #      CouchProvider
-   # )
+def configure(binder: Binder) -> Binder:
+    binder.bind(
+        CouchProvider
+    )
 
 
 if __name__ == '__main__':
