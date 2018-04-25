@@ -6,7 +6,7 @@ from providers.CouchProvider import CouchProvider
 
 from injector import Binder
 
-def configure(binder: Binder) -> Binder:
+def configure(Binder) -> Binder:
     binder.bind(
         CouchProvider
     )
