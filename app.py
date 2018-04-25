@@ -3,7 +3,7 @@ import connexion
 #from flask_injector import FlaskInjector
 from connexion.resolver import RestyResolver
 #from providers.CouchProvider import CouchProvider
-from injector import Binder
+#from injector import Binder
 
 import requests
 import couchdb
