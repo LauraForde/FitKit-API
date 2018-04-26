@@ -37,6 +37,6 @@ class CouchProvider(object):
 
 if __name__ == '__main__':
     app = connexion.App(__name__)  # Provide the app and the directory of the docs specification_dir='swagger/'
-    app.add_api('swagger.yaml', resolver=RestyResolver('api'))
+    app.add_api('swagger.yaml')
     #FlaskInjector(app=app.app, modules=[configure])
-    app.run(port=int(os.environ.get('PORT', 2020))) 
+    app.run(port = 2020) 
