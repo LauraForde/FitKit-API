@@ -1,9 +1,12 @@
 import os
 import connexion
+import logging
 #from flask_injector import FlaskInjector
 from connexion.resolver import RestyResolver
 from providers.CouchProvider import CouchProvider
 #from injector import Binder
+logger = logging.getLogger('connexion.apis.app')
+
 app = connexion.App(__name__, specification_dir='swagger/')
 app.add_api('swagger.yaml', resolver=RestyResolver('providers'))
 
