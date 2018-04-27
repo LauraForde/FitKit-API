@@ -22,7 +22,7 @@ paths:
       get:
         tags:
         - public
-        operationId: api.app.read_user
+        operationId: read_user
         responses:
           '201':
             description: 'Fetch user from the database'
