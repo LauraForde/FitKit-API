@@ -24,7 +24,7 @@ paths:
         - public
         operationId: providers.couchProvider.read_user
         responses:
-          '201':
+          '200':
             description: 'Fetch user from the database'
             schema:
                 $ref: '#/definitions/User'
