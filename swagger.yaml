@@ -24,7 +24,7 @@ paths:
         - public
         operationId: api.users.read_user
         responses:
-          '1':
+          '201':
             description: 'Fetch user from the database'
             schema:
                 $ref: '#/definitions/User'
@@ -38,3 +38,5 @@ definitions:
       _id:  { type: string }
       name: { type: string }
       password: { type: string }
+      dob: { type: string }
+      bio: { type: string }
