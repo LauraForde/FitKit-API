@@ -22,7 +22,7 @@ paths:
       get:
         tags:
         - public
-        operationId: read_user
+        operationId: providers.read_user
         responses:
           '201':
             description: 'Fetch user from the database'
