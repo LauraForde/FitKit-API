@@ -2,4 +2,5 @@ Flask
 connexion
 Flask-Injector
 fastavro
+couchdb
 injector==0.12.0
