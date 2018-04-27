@@ -1,1 +1,1 @@
-from providers.module import *
+from providers.CouchProvider import *
