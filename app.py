@@ -2,7 +2,7 @@ import os
 import connexion
 #from flask_injector import FlaskInjector
 from connexion.resolver import RestyResolver
-from providers.CouchProvider import CouchProvider
+from providers.couchProvider import CouchProvider
 #from injector import Binder
 #app = connexion.App(__name__, specification_dir='swagger/')
 #app.add_api('swagger.yaml', resolver=RestyResolver('providers'))
