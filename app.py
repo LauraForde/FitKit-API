@@ -6,7 +6,7 @@ from providers.couchProvider import CouchProvider
 #from injector import Binder
 #app = connexion.App(__name__, specification_dir='swagger/')
 #app.add_api('swagger.yaml', resolver=RestyResolver('providers'))
-
+import logging
 
 logger = logging.getLogger('connexion.apis.app')
 
