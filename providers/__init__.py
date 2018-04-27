@@ -1,1 +1,1 @@
-from providers.CouchProvider import *
+import providers.CouchProvider
