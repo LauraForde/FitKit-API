@@ -18,7 +18,7 @@ tags:
 schemes:
  - http
 paths:
-  /users/:
+  /people/:
       get:
         tags:
         - public
