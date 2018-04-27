@@ -7,7 +7,13 @@ from providers.couchProvider import CouchProvider
 #app = connexion.App(__name__, specification_dir='swagger/')
 #app.add_api('swagger.yaml', resolver=RestyResolver('providers'))
 
+
+logger = logging.getLogger('connexion.apis.app')
+
+
 if __name__ == '__main__':
+    
+    logger.debug('what')
     app = connexion.App(__name__, specification_dir='swagger/')  # Provide the app and the directory of the docs specification_dir='swagger/'
     app.add_api('swagger.yaml', arguments={'title': 'RestyResolver Example'}, resolver = RestyResolver('providers'))
     #FlaskInjector(app=app.app, modules=[configure])
