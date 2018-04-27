@@ -5,10 +5,10 @@ from connexion.resolver import RestyResolver
 from providers.CouchProvider import CouchProvider
 #from injector import Binder
 
-#if __name__ == '__main__':
-app = connexion.App(__name__)  # Provide the app and the directory of the docs specification_dir='swagger/'
-app.add_api('swagger.yaml', arguments={'title': 'RestyResolver Example'}, resolver = RestyResolver('api'))
-#FlaskInjector(app=app.app, modules=[configure])
-app.run(port = 2020) 
+if __name__ == '__main__':
+    app = connexion.App(__name__)  # Provide the app and the directory of the docs specification_dir='swagger/'
+    app.add_api('swagger.yaml', arguments={'title': 'RestyResolver Example'}, resolver = RestyResolver('providers'))
+    #FlaskInjector(app=app.app, modules=[configure])
+    app.run(port = 2020) 
 
 #specification_dir='swagger/'
