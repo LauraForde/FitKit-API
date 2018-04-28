@@ -16,7 +16,7 @@ class CouchProvider(object):
             db.save(payload)
             return payload,201
     
-    def read_user(self):
+    def read_user(self, user_id):
         db = couch['login']
         if(user_id in db):
             user = db[user_id]

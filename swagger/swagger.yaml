@@ -19,10 +19,10 @@ schemes:
  - http
 paths:
   /people/:
-      post:
+      get:
         tags:
         - public
-        operationId: providers.users.read_user
+        operationId: require.couchProvider.read_user
         responses:
           '200':
             description: 'Fetch user from the database'
