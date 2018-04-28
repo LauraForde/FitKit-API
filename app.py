@@ -1,6 +1,6 @@
 import os
 import connexion
-#from flask_injector import FlaskInjector
+from flask_cors import CORS
 from connexion.resolver import RestyResolver
 from providers.couchProvider import CouchProvider
 #from injector import Binder
@@ -8,6 +8,7 @@ from providers.couchProvider import CouchProvider
 #app.add_api('swagger.yaml', resolver=RestyResolver('providers'))
 import logging
 
+CORS(app.app)
 logger = logging.getLogger('connexion.apis.app')
 
 
