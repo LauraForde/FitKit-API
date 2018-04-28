@@ -10,7 +10,7 @@ services:
       - MODE=dev
       - ADMIN_USERNAME=admin
       - ADMIN_PASSWORD=pass
-      - DB_URL='http://54.68.14.217:5000/people'
+      #- DB_URL='http://54.68.14.217:5000/people'
     volumes:
       - .:/code 
     ports:
