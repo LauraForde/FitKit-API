@@ -2,7 +2,7 @@ import requests
 import couchdb
 ADMIN_USERNAME = 'admin'
 ADMIN_PASSWORD = 'pass'
-COUCHDB_URL = 'http://54.68.14.217:5000/'
+COUCHDB_URL = 'http://'+ADMIN_USERNAME+':'+ADMIN_PASSWORD+'@54.68.14.217:5984/'
 #COUCHDB_URL = 'http://54.68.14.217:5984/'
 couch = couchdb.Server(os.environ['SERVER_URL'])
 
