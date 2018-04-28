@@ -19,7 +19,7 @@ schemes:
  - http
 paths:
   /people/:
-      get:
+      post:
         tags:
         - public
         operationId: providers.users.read_user
