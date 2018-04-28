@@ -1,5 +1,6 @@
 import os
 import connexion
+import flask
 from connexion.resolver import RestyResolver
 from providers.couchProvider import CouchProvider
 #from injector import Binder
