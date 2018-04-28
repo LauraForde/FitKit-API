@@ -8,7 +8,8 @@ from providers.couchProvider import CouchProvider
 #app.add_api('swagger.yaml', resolver=RestyResolver('providers'))
 import logging
 
-CORS(app.app)
+app = Flask(__name__)
+CORS(app)
 
 logger = logging.getLogger('connexion.apis.app')
 app.add_api('swagger.yaml', arguments={'title': 'RestyResolver Example'}, resolver = RestyResolver('providers'))
