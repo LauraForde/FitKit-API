@@ -16,7 +16,7 @@ app.add_api('swagger.yaml', arguments={'title': 'RestyResolver Example'}, resolv
 
 if __name__ == '__main__':
     
-    logger.debug('what')
+    logging.getLogger('flask_cors').level = logging.DEBUG
     app = connexion.App(__name__, specification_dir='swagger/')  # Provide the app and the directory of the docs specification_dir='swagger/'
     #FlaskInjector(app=app.app, modules=[configure])
     app.run(debug = True, port = int(os.environ.get('POST', 5000))) 
