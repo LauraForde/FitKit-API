@@ -4,7 +4,8 @@ ADMIN_USERNAME = 'admin'
 ADMIN_PASSWORD = 'pass'
 COUCHDB_URL = 'http://54.68.14.217:5000/'
 #COUCHDB_URL = 'http://54.68.14.217:5984/'
-couch = couchdb.Server(COUCHDB_URL)
+couch = couchdb.Server(os.environ['SERVER_URL'])
+
 
 class CouchProvider(object):
     def create_user(self,payload):
