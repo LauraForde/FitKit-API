@@ -10,7 +10,7 @@ services:
       - MODE=dev
       - ADMIN_USERNAME=admin
       - ADMIN_PASSWORD=pass
-      - DB_URL='http://'ADMIN_USERNAME+':'+ADMIN_PASSWORD+'@54.68.14.217:5000/'
+      - DB_URL='http://admin:pass@ocalhost@5984/'
     volumes:
       - .:/code 
     ports:
