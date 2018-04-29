@@ -1,1 +1,1 @@
-from require.couchProvider import *
+from providers.couchProvider import *
